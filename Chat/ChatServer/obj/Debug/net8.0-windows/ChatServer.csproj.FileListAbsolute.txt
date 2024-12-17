@@ -1,0 +1,16 @@
+C:\senya\ChatServer\bin\Debug\net8.0-windows\ChatServer.exe
+C:\senya\ChatServer\bin\Debug\net8.0-windows\ChatServer.deps.json
+C:\senya\ChatServer\bin\Debug\net8.0-windows\ChatServer.runtimeconfig.json
+C:\senya\ChatServer\bin\Debug\net8.0-windows\ChatServer.dll
+C:\senya\ChatServer\bin\Debug\net8.0-windows\ChatServer.pdb
+C:\senya\ChatServer\obj\Debug\net8.0-windows\ChatServer.Form1.resources
+C:\senya\ChatServer\obj\Debug\net8.0-windows\ChatServer.csproj.GenerateResource.cache
+C:\senya\ChatServer\obj\Debug\net8.0-windows\ChatServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\senya\ChatServer\obj\Debug\net8.0-windows\ChatServer.AssemblyInfoInputs.cache
+C:\senya\ChatServer\obj\Debug\net8.0-windows\ChatServer.AssemblyInfo.cs
+C:\senya\ChatServer\obj\Debug\net8.0-windows\ChatServer.csproj.CoreCompileInputs.cache
+C:\senya\ChatServer\obj\Debug\net8.0-windows\ChatServer.dll
+C:\senya\ChatServer\obj\Debug\net8.0-windows\refint\ChatServer.dll
+C:\senya\ChatServer\obj\Debug\net8.0-windows\ChatServer.pdb
+C:\senya\ChatServer\obj\Debug\net8.0-windows\ChatServer.genruntimeconfig.cache
+C:\senya\ChatServer\obj\Debug\net8.0-windows\ref\ChatServer.dll

@@ -1,0 +1,16 @@
+C:\senya\ChatClient\bin\Debug\net8.0-windows\ChatClient.exe
+C:\senya\ChatClient\bin\Debug\net8.0-windows\ChatClient.deps.json
+C:\senya\ChatClient\bin\Debug\net8.0-windows\ChatClient.runtimeconfig.json
+C:\senya\ChatClient\bin\Debug\net8.0-windows\ChatClient.dll
+C:\senya\ChatClient\bin\Debug\net8.0-windows\ChatClient.pdb
+C:\senya\ChatClient\obj\Debug\net8.0-windows\ChatClient.Form1.resources
+C:\senya\ChatClient\obj\Debug\net8.0-windows\ChatClient.csproj.GenerateResource.cache
+C:\senya\ChatClient\obj\Debug\net8.0-windows\ChatClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\senya\ChatClient\obj\Debug\net8.0-windows\ChatClient.AssemblyInfoInputs.cache
+C:\senya\ChatClient\obj\Debug\net8.0-windows\ChatClient.AssemblyInfo.cs
+C:\senya\ChatClient\obj\Debug\net8.0-windows\ChatClient.csproj.CoreCompileInputs.cache
+C:\senya\ChatClient\obj\Debug\net8.0-windows\ChatClient.dll
+C:\senya\ChatClient\obj\Debug\net8.0-windows\refint\ChatClient.dll
+C:\senya\ChatClient\obj\Debug\net8.0-windows\ChatClient.pdb
+C:\senya\ChatClient\obj\Debug\net8.0-windows\ChatClient.genruntimeconfig.cache
+C:\senya\ChatClient\obj\Debug\net8.0-windows\ref\ChatClient.dll
