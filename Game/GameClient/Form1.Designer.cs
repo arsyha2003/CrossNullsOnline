@@ -37,10 +37,12 @@
             button7 = new Button();
             button8 = new Button();
             button9 = new Button();
-            button11 = new Button();
             button12 = new Button();
             button13 = new Button();
             button14 = new Button();
+            button11 = new Button();
+            button15 = new Button();
+            button16 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -125,7 +127,7 @@
             // 
             // button9
             // 
-            button9.Location = new Point(273, 264);
+            button9.Location = new Point(273, 265);
             button9.Margin = new Padding(3, 4, 3, 4);
             button9.Name = "button9";
             button9.Size = new Size(83, 96);
@@ -133,23 +135,12 @@
             button9.UseVisualStyleBackColor = true;
             button9.Click += Button22CLick;
             // 
-            // button11
-            // 
-            button11.Location = new Point(751, 510);
-            button11.Margin = new Padding(3, 4, 3, 4);
-            button11.Name = "button11";
-            button11.Size = new Size(151, 55);
-            button11.TabIndex = 9;
-            button11.Text = "Подключиться";
-            button11.UseVisualStyleBackColor = true;
-            button11.Click += OpenConnection;
-            // 
             // button12
             // 
-            button12.Location = new Point(751, 447);
+            button12.Location = new Point(726, 518);
             button12.Margin = new Padding(3, 4, 3, 4);
             button12.Name = "button12";
-            button12.Size = new Size(151, 55);
+            button12.Size = new Size(176, 44);
             button12.TabIndex = 10;
             button12.Text = "Выбрать оппонента";
             button12.UseVisualStyleBackColor = true;
@@ -159,7 +150,7 @@
             // 
             button13.Location = new Point(705, 40);
             button13.Name = "button13";
-            button13.Size = new Size(176, 42);
+            button13.Size = new Size(176, 43);
             button13.TabIndex = 11;
             button13.Text = "Признать поражение";
             button13.UseVisualStyleBackColor = true;
@@ -167,22 +158,54 @@
             // 
             // button14
             // 
-            button14.Location = new Point(705, 86);
+            button14.Location = new Point(705, 85);
             button14.Name = "button14";
-            button14.Size = new Size(176, 42);
+            button14.Size = new Size(176, 43);
             button14.TabIndex = 12;
             button14.Text = "Предложить ничью";
             button14.UseVisualStyleBackColor = true;
+            button14.Click += OfferADraw;
+            // 
+            // button11
+            // 
+            button11.Location = new Point(58, 376);
+            button11.Name = "button11";
+            button11.Size = new Size(310, 125);
+            button11.TabIndex = 13;
+            button11.Text = "Сервер предложил ничью, согласиться?";
+            button11.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            button15.Location = new Point(58, 507);
+            button15.Name = "button15";
+            button15.Size = new Size(79, 31);
+            button15.TabIndex = 14;
+            button15.Text = "ДА";
+            button15.UseVisualStyleBackColor = true;
+            button15.Click += AgreeDraw;
+            // 
+            // button16
+            // 
+            button16.Location = new Point(289, 507);
+            button16.Name = "button16";
+            button16.Size = new Size(79, 31);
+            button16.TabIndex = 15;
+            button16.Text = "Нет";
+            button16.UseVisualStyleBackColor = true;
+            button16.Click += DisagreeDraw;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+            Controls.Add(button16);
+            Controls.Add(button15);
+            Controls.Add(button11);
             Controls.Add(button14);
             Controls.Add(button13);
             Controls.Add(button12);
-            Controls.Add(button11);
             Controls.Add(button9);
             Controls.Add(button8);
             Controls.Add(button7);
@@ -210,9 +233,11 @@
         private Button button8;
         private Button button9;
         private Button button10;
-        private Button button11;
         private Button button12;
         private Button button13;
         private Button button14;
+        private Button button11;
+        private Button button15;
+        private Button button16;
     }
 }

@@ -47,3 +47,38 @@ C:\MYFOLDER\Coding\Academy\Game\GameClient\obj\Debug\net8.0-windows\TcpLientPrat
 C:\MYFOLDER\Coding\Academy\Game\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.genruntimeconfig.cache
 C:\MYFOLDER\Coding\Academy\Game\GameClient\obj\Debug\net8.0-windows\ref\TcpLientPratice.dll
 C:\MYFOLDER\Coding\Academy\Game\GameClient\obj\Debug\net8.0-windows\Pratice3Server.Form2.resources
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\bin\Debug\net8.0-windows\TcpLientPratice.exe
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\bin\Debug\net8.0-windows\TcpLientPratice.deps.json
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\bin\Debug\net8.0-windows\TcpLientPratice.runtimeconfig.json
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\bin\Debug\net8.0-windows\TcpLientPratice.dll
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\bin\Debug\net8.0-windows\TcpLientPratice.pdb
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.Form1.resources
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\obj\Debug\net8.0-windows\Pratice3Server.Form2.resources
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.csproj.GenerateResource.cache
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.AssemblyInfoInputs.cache
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.AssemblyInfo.cs
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.csproj.CoreCompileInputs.cache
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.sourcelink.json
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.dll
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\obj\Debug\net8.0-windows\refint\TcpLientPratice.dll
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.pdb
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.genruntimeconfig.cache
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameClient\obj\Debug\net8.0-windows\ref\TcpLientPratice.dll
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\bin\Debug\net8.0-windows\TcpLientPratice.exe
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\bin\Debug\net8.0-windows\TcpLientPratice.deps.json
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\bin\Debug\net8.0-windows\TcpLientPratice.runtimeconfig.json
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\bin\Debug\net8.0-windows\TcpLientPratice.dll
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\bin\Debug\net8.0-windows\TcpLientPratice.pdb
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.Form1.resources
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\obj\Debug\net8.0-windows\Pratice3Server.Form2.resources
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.csproj.GenerateResource.cache
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.AssemblyInfoInputs.cache
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.AssemblyInfo.cs
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.csproj.CoreCompileInputs.cache
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.dll
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\obj\Debug\net8.0-windows\refint\TcpLientPratice.dll
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.pdb
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\obj\Debug\net8.0-windows\TcpLientPratice.genruntimeconfig.cache
+C:\Users\arsen\OneDrive\Рабочий стол\GameClient\obj\Debug\net8.0-windows\ref\TcpLientPratice.dll

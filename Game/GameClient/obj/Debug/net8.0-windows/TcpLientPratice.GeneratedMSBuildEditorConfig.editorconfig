@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TcpLientPratice
-build_property.ProjectDir = C:\MYFOLDER\Coding\Academy\Game\GameClient\
+build_property.ProjectDir = C:\Users\arsen\OneDrive\Рабочий стол\GameClient\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

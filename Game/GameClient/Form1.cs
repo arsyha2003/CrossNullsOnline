@@ -18,7 +18,7 @@ namespace TcpLientPratice
         public Button[,] buttons;
         public int x;
         public int y;
-
+        public Action<IPEndPoint> connectToServer;
         public Form2 connectionForm = null;
         public Form1()
         {
@@ -31,26 +31,26 @@ namespace TcpLientPratice
                 {button4,button5, button6},
                 {button7,button8, button9}
             };
-        }
-        public async void OpenConnection(object sender, EventArgs e)
-        {
-            try
+            connectToServer = (IPEndPoint point) =>
             {
-                if (connectionForm != null)
+                try
                 {
-                    point = connectionForm.serverPoint;
+                    client.Connect(point);
+                    stream = client.GetStream();
+                    Task.Run(() => ReceiveMessagesAsync());
+                    MessageBox.Show($"Подключено к {point}");
                 }
-                client.Connect(point);
-                stream = client.GetStream();
-                Task.Run(() => ReceiveMessagesAsync());
-                MessageBox.Show($"Подключено к {point}");
-            }
-            catch (Exception ex) { MessageBox.Show(ex.Message); return; }
+                catch (Exception ex) { MessageBox.Show(ex.Message); return; }
+            };
+            button11.Visible = false;
+            button15.Visible = false;
+            button16.Visible = false;
         }
         public void SelectServer(object sender, EventArgs e)
         {
-            connectionForm = new Form2();
+            connectionForm = new Form2(connectToServer);
             connectionForm.Show();
+            button12.Visible = false;
         }
         public void ChangeButtonsValue(string[] tmp)
         {
@@ -79,6 +79,22 @@ namespace TcpLientPratice
                 }
             }
         }
+        public void OfferADraw(object sender, EventArgs e)
+        {
+            stream.Write(Encoding.UTF8.GetBytes("/draw" + '\n'));
+        }
+        public void AgreeDraw(object sender, EventArgs e)
+        {
+            stream.Write(Encoding.UTF8.GetBytes("/agree" + '\n'));
+            MessageBox.Show("Обе стороны приняли ничью");
+        }
+        public void DisagreeDraw(object sender, EventArgs e)
+        {
+            stream.Write(Encoding.UTF8.GetBytes("/disagree" + '\n'));
+            button11.Visible = false;
+            button15.Visible = false;
+            button16.Visible = false;
+        }
         public void GetLose(object sender, EventArgs e)
         {
             stream.Write(Encoding.UTF8.GetBytes("/loseклиент" + '\n'));
@@ -100,9 +116,26 @@ namespace TcpLientPratice
                     if (message.Contains("/lose"))
                     {
                         MessageBox.Show(message.Replace("/lose", string.Empty)+" признал поражение");
+                        button12.Visible = true;
                         client.Close();
                     }
-                    if (message.Contains("/board"))
+                    else if (message.Contains("/draw"))
+                    {
+                        button13.Visible = true;
+                        button14.Visible = true;
+                        button15.Visible = true;
+                    }
+                    else if (message.Contains("/agree"))
+                    {
+                        MessageBox.Show("Обе стороны приняли ничью");
+                    }
+                    else if (message.Contains("/disagree"))
+                    {
+                        button11.Visible = false;
+                        button15.Visible = false;
+                        button16.Visible = false;
+                    }
+                    else if (message.Contains("/board"))
                     {
                         ChangeButtonsValue(message.Replace("/board", string.Empty).Split());
                     }

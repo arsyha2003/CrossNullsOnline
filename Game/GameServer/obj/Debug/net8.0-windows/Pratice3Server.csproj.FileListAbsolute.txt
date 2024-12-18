@@ -46,3 +46,36 @@ C:\MYFOLDER\Coding\Academy\Game\GameServer\bin\Debug\net8.0-windows\Pratice3Serv
 C:\MYFOLDER\Coding\Academy\Game\GameServer\bin\Debug\net8.0-windows\Pratice3Server.pdb
 C:\MYFOLDER\Coding\Academy\Game\GameServer\obj\Debug\net8.0-windows\Pratice3Server.genruntimeconfig.cache
 C:\MYFOLDER\Coding\Academy\Game\GameServer\obj\Debug\net8.0-windows\ref\Pratice3Server.dll
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\bin\Debug\net8.0-windows\Pratice3Server.exe
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\bin\Debug\net8.0-windows\Pratice3Server.deps.json
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\bin\Debug\net8.0-windows\Pratice3Server.runtimeconfig.json
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\bin\Debug\net8.0-windows\Pratice3Server.dll
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\bin\Debug\net8.0-windows\Pratice3Server.pdb
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\obj\Debug\net8.0-windows\Pratice3Server.Form1.resources
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\obj\Debug\net8.0-windows\Pratice3Server.csproj.GenerateResource.cache
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\obj\Debug\net8.0-windows\Pratice3Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\obj\Debug\net8.0-windows\Pratice3Server.AssemblyInfoInputs.cache
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\obj\Debug\net8.0-windows\Pratice3Server.AssemblyInfo.cs
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\obj\Debug\net8.0-windows\Pratice3Server.csproj.CoreCompileInputs.cache
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\obj\Debug\net8.0-windows\Pratice3Server.sourcelink.json
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\obj\Debug\net8.0-windows\Pratice3Server.dll
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\obj\Debug\net8.0-windows\refint\Pratice3Server.dll
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\obj\Debug\net8.0-windows\Pratice3Server.pdb
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\obj\Debug\net8.0-windows\Pratice3Server.genruntimeconfig.cache
+C:\Users\top_acdemy_student\source\repos\dz\Game\GameServer\obj\Debug\net8.0-windows\ref\Pratice3Server.dll
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\bin\Debug\net8.0-windows\Pratice3Server.exe
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\bin\Debug\net8.0-windows\Pratice3Server.deps.json
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\bin\Debug\net8.0-windows\Pratice3Server.runtimeconfig.json
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\bin\Debug\net8.0-windows\Pratice3Server.dll
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\bin\Debug\net8.0-windows\Pratice3Server.pdb
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\obj\Debug\net8.0-windows\Pratice3Server.Form1.resources
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\obj\Debug\net8.0-windows\Pratice3Server.csproj.GenerateResource.cache
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\obj\Debug\net8.0-windows\Pratice3Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\obj\Debug\net8.0-windows\Pratice3Server.AssemblyInfoInputs.cache
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\obj\Debug\net8.0-windows\Pratice3Server.AssemblyInfo.cs
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\obj\Debug\net8.0-windows\Pratice3Server.csproj.CoreCompileInputs.cache
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\obj\Debug\net8.0-windows\Pratice3Server.dll
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\obj\Debug\net8.0-windows\refint\Pratice3Server.dll
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\obj\Debug\net8.0-windows\Pratice3Server.pdb
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\obj\Debug\net8.0-windows\Pratice3Server.genruntimeconfig.cache
+C:\Users\arsen\OneDrive\Рабочий стол\GameServer\obj\Debug\net8.0-windows\ref\Pratice3Server.dll

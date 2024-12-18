@@ -27,7 +27,7 @@ namespace Pratice3Server
         public Form1()
         {
             InitializeComponent();
-            game = new Game();  
+            game = new Game();
             listener = new TcpListener(IPAddress.Any, 7777);
             buttons = new Button[,]
             {
@@ -35,6 +35,9 @@ namespace Pratice3Server
                 {button4,button5, button6},
                 {button7,button8, button9}
             };
+            button13.Visible = false;
+            button14.Visible = false;
+            button15.Visible = false;
         }
         public int ChoseSide()
         {
@@ -46,7 +49,7 @@ namespace Pratice3Server
             Button b = (Button)sender;
             if (clientMove == false)
             {
-                game.Move(x, y, xSide); 
+                game.Move(x, y, xSide);
                 b.Text = "X";
                 clientMove = true;
             }
@@ -163,18 +166,18 @@ namespace Pratice3Server
                 _ = Task.Run(() => CheckGameStatus());
                 MessageBox.Show(client.Client.RemoteEndPoint.ToString());
                 xSide = ChoseSide();
-                if(xSide == 1)
+                if (xSide == 1)
                 {
                     Text = "Ты ходишь ноликами";
                     zeroSide = 2;
                 }
-                else if(xSide == 2)
+                else if (xSide == 2)
                 {
                     Text = "Ты ходишь крестиками";
                     zeroSide = 1;
                 }
             }
-            catch(Exception ex) {MessageBox.Show(ex.Message); return; }
+            catch (Exception ex) { MessageBox.Show(ex.Message); return; }
 
         }
         public void SendBoard()
@@ -204,6 +207,11 @@ namespace Pratice3Server
                     whoWin = "крестики";
                 }
             }
+            MessageBox.Show("Игра закончена, победили " + whoWin);
+            EndGame();
+        }
+        public void EndGame()
+        {
             game.board = new int[,]
             {
                 {0,0,0},
@@ -214,18 +222,37 @@ namespace Pratice3Server
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    buttons[i,j].Text = string.Empty;
+                    buttons[i, j].Text = string.Empty;
                 }
             }
-            MessageBox.Show("Игра закончена, победили " + whoWin);
+            SendBoard();
             client.Close();
         }
-        
+        public void OfferADraw(object sender, EventArgs e)
+        {
+            stream.Write(Encoding.UTF8.GetBytes("/draw" + '\n'));
+        }
+        public void AgreeDraw(object sender, EventArgs e)
+        {
+            stream.Write(Encoding.UTF8.GetBytes("/agree" + '\n'));
+            MessageBox.Show("Обе стороны приняли ничью");
+            EndGame();
+        }
+        public void DisagreeDraw(object sender, EventArgs e) 
+        {
+            stream.Write(Encoding.UTF8.GetBytes("/disagree" + '\n'));
+            button13.Visible = false;
+            button14.Visible = false;
+            button15.Visible = false;
+        }
+        public async Task BotWorking()
+        {
+
+        }
         public async Task ClientMoves()
         {
             try
             {
-                
                 if(zeroSide == 1) stream.Write(Encoding.UTF8.GetBytes("/side1" + '\n'));       
                 else if(zeroSide == 2) stream.Write(Encoding.UTF8.GetBytes("/side2" + '\n'));
 
@@ -241,33 +268,49 @@ namespace Pratice3Server
                         if (message.Contains("/lose"))
                         {
                             MessageBox.Show(message.Replace("/lose", string.Empty) + " признал поражение");
+                            EndGame();
+                            SendBoard();
                             client.Close();
                         }
-                        if (message.Contains("/move"))
+                        else if (message.Contains("/agree"))
                         {
-                            if(clientMove == true)
+                            MessageBox.Show("Обе стороны приняли ничью");
+                            EndGame();
+                        }
+                        else if (message.Contains("/disagree"))
+                        {
+                            button13.Visible = false;
+                            button14.Visible = false;
+                            button15.Visible = false;
+                        }
+                        else if (message.Contains("/draw"))
+                        {
+                            button13.Visible = true;
+                            button14.Visible = true;
+                            button15.Visible = true;
+                        }
+                        else if (message.Contains("/move") && clientMove == true)
+                        {
+                            var tmp = message.Replace("/move", string.Empty).Split();
+                            int x = int.Parse(tmp[0]);
+                            int y = int.Parse(tmp[1]);
+                            game.Move(x, y, zeroSide);
+                            clientMove = false;
+                            for (int i = 0; i < 3; i++)
                             {
-                                var tmp = message.Replace("/move", string.Empty).Split();
-                                int x = int.Parse(tmp[0]);
-                                int y = int.Parse(tmp[1]);
-                                game.Move(x, y, zeroSide);
-                                clientMove = false;
-                                for (int i = 0; i < 3; i++)
+                                for (int j = 0; j < 3; j++)
                                 {
-                                    for (int j = 0; j < 3; j++)
+                                    if (game.board[i, j] == 2)
                                     {
-                                        if (game.board[i, j] == 2)
-                                        {
-                                            buttons[i, j].Text = "X";
-                                        }
-                                        if (game.board[i, j] == 1)
-                                        {
-                                            buttons[i, j].Text = "0";
-                                        }
+                                        buttons[i, j].Text = "X";
+                                    }
+                                    if (game.board[i, j] == 1)
+                                    {
+                                        buttons[i, j].Text = "0";
                                     }
                                 }
-                                SendBoard();
                             }
+                            SendBoard();
                         }
                         buffer.Clear();
                     }

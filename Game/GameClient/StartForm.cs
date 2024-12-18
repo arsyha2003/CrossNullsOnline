@@ -16,9 +16,13 @@ namespace Pratice3Server
         public IPEndPoint serverPoint = null;
         private IPAddress ip;
         private int port;
-        public Form2()
+        private Action<IPEndPoint> getPoint;
+        public Form2(Action<IPEndPoint> getPoint)
         {
             InitializeComponent();
+            textBox1.Text = "127.0.0.1";
+            textBox2.Text = "7777";
+            this.getPoint = getPoint;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,6 +32,7 @@ namespace Pratice3Server
                 ip = IPAddress.Parse(textBox1.Text);
                 port = int.Parse(textBox2.Text);
                 serverPoint = new IPEndPoint(ip, port);
+                getPoint.Invoke(serverPoint);
                 this.Close();
             }
             catch

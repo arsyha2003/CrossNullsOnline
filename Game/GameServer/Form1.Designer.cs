@@ -40,6 +40,9 @@
             button10 = new Button();
             button11 = new Button();
             button12 = new Button();
+            button13 = new Button();
+            button14 = new Button();
+            button15 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -134,9 +137,9 @@
             // 
             // button10
             // 
-            button10.Location = new Point(808, 522);
+            button10.Location = new Point(792, 504);
             button10.Name = "button10";
-            button10.Size = new Size(94, 66);
+            button10.Size = new Size(110, 66);
             button10.TabIndex = 9;
             button10.Text = "Открыть соединение";
             button10.UseVisualStyleBackColor = true;
@@ -150,6 +153,7 @@
             button11.TabIndex = 10;
             button11.Text = "Предложить ничью";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += OfferADraw;
             // 
             // button12
             // 
@@ -161,11 +165,43 @@
             button12.UseVisualStyleBackColor = true;
             button12.Click += GetLose;
             // 
+            // button13
+            // 
+            button13.Location = new Point(79, 367);
+            button13.Name = "button13";
+            button13.Size = new Size(267, 159);
+            button13.TabIndex = 12;
+            button13.Text = "Клиент предложил ничью, согласитесь?";
+            button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            button14.Location = new Point(79, 532);
+            button14.Name = "button14";
+            button14.Size = new Size(85, 42);
+            button14.TabIndex = 13;
+            button14.Text = "Да";
+            button14.UseVisualStyleBackColor = true;
+            button14.Click += AgreeDraw;
+            // 
+            // button15
+            // 
+            button15.Location = new Point(261, 532);
+            button15.Name = "button15";
+            button15.Size = new Size(85, 42);
+            button15.TabIndex = 14;
+            button15.Text = "Нет";
+            button15.UseVisualStyleBackColor = true;
+            button15.Click += DisagreeDraw;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+            Controls.Add(button15);
+            Controls.Add(button14);
+            Controls.Add(button13);
             Controls.Add(button12);
             Controls.Add(button11);
             Controls.Add(button10);
@@ -198,5 +234,8 @@
         private Button button10;
         private Button button11;
         private Button button12;
+        private Button button13;
+        private Button button14;
+        private Button button15;
     }
 }
